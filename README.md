@@ -43,3 +43,16 @@ This repository implements the `/identify` endpoint for the Bitespeed task. The 
    ```
    The server will run on port 3000 by default. You can test the endpoint locally at `http://localhost:3000/identify`.
 
+## Testing the /identify Endpoint
+
+
+```bash
+curl -X POST https://bitespeed-6u5p.onrender.com/identify -H "Content-Type: application/json" -d '{"email": "lorraine@hillvalley.edu", "phoneNumber": "123456"}'
+```
+
+## Live app link
+https://bitespeed-6u5p.onrender.com/
+
+## sending  POST request
+
+"curl -X POST https://bitespeed-6u5p.onrender.com/identify -H "Content-Type: application/json" -d '{"email": "lorraine@hillvalley.edu", "phoneNumber": "123456"}'"
