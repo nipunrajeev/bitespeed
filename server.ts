@@ -5,7 +5,6 @@ const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
-// Added Contact interface to provide type definitions and clear errors
 interface Contact {
   id: number;
   email: string | null;
@@ -76,7 +75,7 @@ const identifyHandler: express.RequestHandler = (req, res, next) => {
       });
     }
 
-    // flatten all related contacts under primary
+    // flatten  primary
     contacts.forEach(c => {
       if (c.linkedId === root.id || c.id === root.id) return;
       if (!c.deletedAt && (c.email === email || c.phoneNumber === phone)) {
@@ -87,7 +86,7 @@ const identifyHandler: express.RequestHandler = (req, res, next) => {
     });
   }
 
-  // get all linked contacts
+  // get all linked contact
   const group = contacts.filter(c =>
     !c.deletedAt && (c.id === primary.id || c.linkedId === primary.id)
   );
