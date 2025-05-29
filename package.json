@@ -4,13 +4,14 @@
   "description": "Identify Endpoint",
   "main": "server1.ts",
   "scripts": {
-  "start": "ts-node server1.ts"
+    "start": "ts-node server1.ts"
   },
   "dependencies": {
-  "express": "^4.18.2"
+    "express": "^4.18.2"
   },
   "devDependencies": {
-  "ts-node": "^10.9.1",
-  "typescript": "^4.8.4"
+    "@types/express": "^5.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^4.9.5"
   }
-  }
+}
