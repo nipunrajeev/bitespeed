@@ -2,9 +2,9 @@
   "name": "bitespeed",
   "version": "1.0.0",
   "description": "Identify Endpoint",
-  "main": "server1.ts",
+  "main": "server.ts",
   "scripts": {
-    "start": "ts-node server1.ts"
+    "start": "ts-node server.ts"
   },
   "dependencies": {
     "express": "^4.18.2"
